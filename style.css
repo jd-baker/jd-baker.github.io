@@ -13,7 +13,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 700;
+  font-weight: 700;
 }
 
 header {
@@ -38,11 +38,20 @@ header {
   .images .image {
     width: 33.333%;
   }
+
+  .container {
+    width: 85%;
+    margin: auto;
+  }
 }
 
 @media (min-width: 1000px) {
   .images .image {
     width: 25%;
+  }
+
+  .container {
+    width: 70%;
   }
 }
 
