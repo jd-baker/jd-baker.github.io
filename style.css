@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+}
+
+.images {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.images .image {
+  padding: 10px;
+  width: 50%;
+}
+
+@media (min-width: 696px) {
+  .images .image {
+    width: 33.333%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .images .image {
+    width: 25%;
+  }
+}
+
+.image img {
+  width: 100%;
+}
