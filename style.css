@@ -2,8 +2,25 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'PT Sans', sans-serif;
+  background: #F3F3F3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 700;
+}
+
 header {
   text-align: center;
+  text-transform: uppercase;
+  overflow: auto;
+  background: #4A95D2;
 }
 
 .images {
