@@ -2,9 +2,21 @@
   box-sizing: border-box;
 }
 
+body,
+html {
+  min-height: 100%;
+}
+
 body {
   font-family: 'PT Sans', sans-serif;
-  background: #F3F3F3;
+  /*background: #;*/
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0055aa+0,c6c6c6+100 */
+background: rgb(0,85,170); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(0,85,170,1) 0%, rgba(198,198,198,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,85,170,1) 0%,rgba(198,198,198,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,85,170,1) 0%,rgba(198,198,198,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0055aa', endColorstr='#c6c6c6',GradientType=0 ); /* IE6-9 */
+
 }
 
 h1,
@@ -23,23 +35,24 @@ header {
   background: #4A95D2;
 }
 
+header a {
+  color: black
+}
+
+.description {
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+
+
+
 
 .images {
   display: flex;
   flex: 1;
   flex-wrap: wrap;
-}
-
-.images1 {
-  display: flex;
-  flex: 1;
-  flex-wrap: wrap;
-}
-
-.images2 {
-  display: flex;
-  flex: 1;
-  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .images .image {
@@ -53,32 +66,16 @@ header {
 }
 
 @media (min-width: 696px) {
-  .images- .image {
+  .images .image {
     width: 45.5%;
   }
-
-  @media (min-width: 696px) {
-    .images1 .image {
-      width: 40%;
-    }
-
-    @media (min-width: 696px) {
-      .images2 .image {
-        width: 60%;
-      }
-
-
-@media (min-width: 696px) {
-  .images .image {
-    width: 33.333%;
-  }
-
-
   .container {
     width: 85%;
     margin: auto;
   }
+
 }
+
 
 @media (min-width: 1000px) {
   .images .image {
@@ -86,9 +83,14 @@ header {
   }
 
 
+  .top-images .image {
+      width: 50%;
+    }
+
   .container {
     width: 70%;
   }
+
 }
 
 img {
