@@ -23,7 +23,20 @@ header {
   background: #4A95D2;
 }
 
+
 .images {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.images1 {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.images2 {
   display: flex;
   flex: 1;
   flex-wrap: wrap;
@@ -34,10 +47,32 @@ header {
   width: 50%;
 }
 
+.images1 .image {
+  padding: 33px;
+  width: 75%;
+}
+
+@media (min-width: 696px) {
+  .images- .image {
+    width: 45.5%;
+  }
+
+  @media (min-width: 696px) {
+    .images1 .image {
+      width: 40%;
+    }
+
+    @media (min-width: 696px) {
+      .images2 .image {
+        width: 60%;
+      }
+
+
 @media (min-width: 696px) {
   .images .image {
     width: 33.333%;
   }
+
 
   .container {
     width: 85%;
@@ -50,11 +85,12 @@ header {
     width: 25%;
   }
 
+
   .container {
     width: 70%;
   }
 }
 
-.image img {
+img {
   width: 100%;
 }
